@@ -5,6 +5,7 @@
 #
 
 cd /home/pi/OverCanvey
+virtualenv py3
 source py3/bin/activate
 
 
