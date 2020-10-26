@@ -96,23 +96,30 @@ def Tweet(a, havescreenshot):
 		tweet = Template(parser.get('tweet', 'tweet_template')).substitute(templateArgs)
 	#conditional hashtags:
 	hashtags = []
+	#Time
 	if a.time.hour < 6 or a.time.hour >= 22 or (a.time.weekday() == 7 and a.time.hour < 8):
 		hashtags.append(" #AfterHours")
+	#Altitude
 	if a.altitude < 1000:
 		hashtags.append(" #LowFlier")
-	if a.altitude >= 1000 and a.altitude < 2500 and (templateArgs['heading'] == "S" or templateArgs['heading'] == "SW"):
+	if a.altitude >= 1000 and a.altitude < 2500 and (templateArgs['heading'] == "NE" or templateArgs['heading'] == "SW"):
 		hashtags.append(" #ProbablyLanding")
 	if a.altitude > 20000 and a.altitude < 35000:
 		hashtags.append(" #UpInTheClouds")
 	if a.altitude >= 35000:
-		hashtags.append(" #WayTheHeckUpThere")
+		hashtags.append(" #WayUpThere")
+	#Speed
 	if a.speed > 300 and a.speed < 500:
 		hashtags.append(" #MovingQuickly")
 	if a.speed >= 500 and a.speed < 770:
 		hashtags.append(" #FlyingFast")
 	if a.speed >= 700:
 		hashtags.append(" #SpeedDemon")
-
+	#Vertical Rate 
+	if a.vert_rate > 0:
+		hashtags.append(" #Acending")
+	if a.vert_rate < 0:
+		hashtags.append(" #Decending")	
 	# add the conditional hashtags as long as there is room in 140 chars
 	for hash in hashtags: 
 		if len(tweet) + len(hash) <= 280:
