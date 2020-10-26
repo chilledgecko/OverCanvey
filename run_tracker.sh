@@ -4,7 +4,7 @@
 # and then loops forever restarting the tracker program if it ever exits.
 #
 
-cd /home/pi/OverPutney
+cd /home/pi/OverCanvey
 source py3/bin/activate
 
 
