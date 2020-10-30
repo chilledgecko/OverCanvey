@@ -26,4 +26,3 @@ Add your Twitter keys and location in lat/long to `config` and rename as `config
 
 ## Forked from the [overputney](https://github.com/shbisson/OverPutney) code written by
 * [Simon Bisson](https://github.com/shbisson)
-* [Joseph Prochazka](https://github.com/jprochazka)
