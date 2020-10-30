@@ -1,6 +1,6 @@
-# OverPutney
+# OverCanvey
 
-[OverPutney](https://twitter.com/overputney) is an ADS-B Twitter Bot running on a Raspberry Pi 4.  It tracks airplanes and then tweets whenever an airplane flies overhead. It is a fork of the original AboveTustin bot, modified to work on a Piaware with Flightaware's fork of dump1090 and adding support for [Josh Douch's free ICAO lookup APIs](https://api.joshdouch.me/). It also uses chromedriver for browser interactions rather than the deprecated PhantomJS webdriver.
+[OverCanvey](https://twitter.com/OverCanvey) is an ADS-B Twitter Bot running on a Raspberry Pi 4.  It tracks airplanes and then tweets whenever an airplane flies overhead. It is a fork of the original AboveTustin & OverPutney bot, modified to work on a Piaware with Flightaware's fork of dump1090 and adding support for [Josh Douch's free ICAO lookup APIs](https://api.joshdouch.me/). It also uses chromedriver for browser interactions rather than the deprecated PhantomJS webdriver.
 
  * Uses [tar1090](https://github.com/wiedehopf/tar1090) for ADSB message decoding, airplane tracking, and webserving.
  * Built on the [Flightaware Piaware distribution](https://flightaware.com/adsb/piaware/build).
