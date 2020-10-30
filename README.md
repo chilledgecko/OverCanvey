@@ -24,6 +24,6 @@
 
 Add your Twitter keys and location in lat/long to `config` and rename as `config.ini` before running. The `./runbot.sh` script will launch the looping script `run_tracker.sh` (which ensures the tracker python code is running) as a background task with no interaction. Use `tail -f nohup.out` to monitor operations. `pkill -f tracker` will shut down the bot.
 
-## Forked from the [AboveTustin](https://github.com/kevinabrandon/AboveTustin) code written by
-* [Kevin Brandon](https://github.com/kevinabrandon)
+## Forked from the [overputney](https://github.com/shbisson/OverPutney) code written by
+* [Simon Bisson](https://github.com/shbisson)
 * [Joseph Prochazka](https://github.com/jprochazka)
